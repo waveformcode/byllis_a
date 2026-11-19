@@ -1,0 +1,381 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Billy's Public House · Agios Nikolaos</title>
+    <meta
+      name="description"
+      content="Billiards pub in the centre of Agios Nikolaos since 1987. Pool tables, cold beer, PS5 and live football and basketball. Open every night 18:00 to 01:00."
+    />
+    <meta name="theme-color" content="#0c0a09" />
+
+    <!-- Marks JS as available before first paint, so hidden-until-revealed
+         content never flashes. Without JS everything is simply visible. -->
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&family=Yellowtail&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preload" as="image" href="assets/photos/hero-billiards.webp" fetchpriority="high" />
+    <link rel="stylesheet" href="assets/award.css" />
+    <script src="assets/award.js" defer></script>
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- ================= HEADER ================= -->
+    <header class="site-header" data-header>
+      <nav class="site-nav site-nav--left" aria-label="Sections">
+        <a href="#billiards-section">Billiards</a>
+        <a href="#bar">Bar</a>
+        <a href="#games">Games</a>
+      </nav>
+
+      <a href="#top" class="logo" aria-label="Billy's, back to top">Billy's</a>
+
+      <div class="site-nav site-nav--right">
+        <nav aria-label="More">
+          <a href="#about">About</a>
+          <a href="#find-us">Find us</a>
+        </nav>
+        <div class="lang" aria-label="Language">
+          <a href="#" lang="el" hreflang="el">GR</a>
+          <span aria-hidden="true">/</span>
+          <a href="#" aria-current="true">EN</a>
+        </div>
+        <a class="icon-link" href="#" aria-label="Billy's on Instagram">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <rect x="3" y="3" width="18" height="18" rx="5" />
+            <circle cx="12" cy="12" r="4.2" />
+            <circle cx="17.4" cy="6.6" r="1.1" class="fill" />
+          </svg>
+        </a>
+      </div>
+
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="menu" data-menu-button>
+        <span class="menu-button__label">Menu</span>
+        <span class="menu-button__icon" aria-hidden="true"><i></i><i></i></span>
+      </button>
+    </header>
+
+    <!-- Mobile menu -->
+    <div class="menu" id="menu" hidden data-menu>
+      <nav aria-label="Menu">
+        <a href="#billiards-section"><span>01</span>Billiards</a>
+        <a href="#bar"><span>02</span>Bar</a>
+        <a href="#games"><span>03</span>Games</a>
+        <a href="#about"><span>04</span>About</a>
+        <a href="#find-us"><span>05</span>Find us</a>
+      </nav>
+      <div class="menu__foot">
+        <p>Open every night<br />18:00 – 01:00</p>
+        <div class="lang">
+          <a href="#" lang="el" hreflang="el">GR</a>
+          <span aria-hidden="true">/</span>
+          <a href="#" aria-current="true">EN</a>
+        </div>
+      </div>
+    </div>
+
+    <main id="main">
+      <!-- ================= HERO ================= -->
+      <section class="hero" id="top">
+        <div class="hero__media" aria-hidden="true">
+          <img
+            src="assets/photos/hero-billiards.webp"
+            alt=""
+            width="4284"
+            height="3319"
+            fetchpriority="high"
+            data-parallax="0.18"
+          />
+        </div>
+
+        <h1 class="hero__title" aria-label="Billy's Public House">
+          <span class="hero__word" aria-hidden="true">
+            <span class="ch" style="--i: 0">B</span>
+            <span class="ch" style="--i: 1">I</span>
+            <span class="ch" style="--i: 2">L</span>
+            <span class="ch" style="--i: 3">L</span>
+            <span class="ch" style="--i: 4">Y</span>
+            <span class="ch ch--apos" style="--i: 5">’</span>
+            <span class="ch" style="--i: 6">S</span>
+          </span>
+          <span class="hero__kicker" aria-hidden="true">
+            <span data-load style="--d: 700ms">Public House</span>
+            <span data-load style="--d: 820ms">Est. 1987</span>
+            <span data-load style="--d: 940ms">Agios Nikolaos, Crete</span>
+          </span>
+        </h1>
+
+        <div class="hero__foot">
+          <p class="hero__lead" data-load style="--d: 1000ms">
+            Where Agios Nikolaos comes to shoot pool, drink and argue about the
+            match.
+          </p>
+
+          <div class="hero__actions" data-load style="--d: 1150ms">
+            <p class="status" data-status>
+              <span class="status__dot" aria-hidden="true"></span>
+              <span class="status__text">Open every night · 18:00 – 01:00</span>
+            </p>
+            <div class="btn-row">
+              <a class="btn btn--primary" href="https://maps.app.goo.gl/sBeQEkfYLbhqPP6d8" data-magnetic>
+                <span>Get directions</span><span class="btn__arrow" aria-hidden="true">↗</span>
+              </a>
+              <a class="btn" href="tel:+306970240215" data-magnetic>
+                <span>Call the bar</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <a class="scroll-cue" href="#billiards-section" aria-label="Scroll to billiards" data-load style="--d: 1400ms">
+          <span aria-hidden="true"></span>
+        </a>
+      </section>
+
+      <!-- ================= 01 BILLIARDS ================= -->
+      <section class="section billiards" id="billiards-section" aria-labelledby="billiards-title">
+        <div class="wrap grid">
+          <p class="label section__label" data-reveal><span>01</span> The tables</p>
+
+          <h2 class="display billiards__title" id="billiards-title" data-reveal="lines">
+            <span class="line"><span>Break,</span></span>
+            <span class="line line--indent-1"><span>Play,</span></span>
+            <span class="line line--indent-2"><span>Repeat.</span></span>
+          </h2>
+
+          <p class="lead billiards__text" data-reveal style="--d: 200ms">
+            Billy’s has always been a billiards pub first. The tables are the
+            heart of the place. Rack up a casual game with friends, or challenge
+            the regulars.
+          </p>
+        </div>
+
+        <div class="wrap grid gallery">
+          <figure class="gallery__item gallery__item--tall">
+            <div class="frame" data-reveal="img">
+              <img
+                src="assets/photos/billiards-top2.webp"
+                alt="A pool table seen from the balcony above, balls spread across the red felt mid game"
+                width="2040"
+                height="3066"
+                loading="lazy"
+              />
+            </div>
+            <figcaption class="caption">Fig. 01 — Mid game, from the balcony</figcaption>
+          </figure>
+
+          <figure class="gallery__item gallery__item--wide">
+            <div class="frame" data-reveal="img" style="--d: 120ms">
+              <img
+                src="assets/photos/billiards-top3.webp"
+                alt="Close up of a corner pocket with a full rack of balls on the red felt"
+                width="3400"
+                height="2267"
+                loading="lazy"
+              />
+            </div>
+            <figcaption class="caption">Fig. 02 — Racked and waiting</figcaption>
+          </figure>
+
+          <figure class="gallery__item gallery__item--small">
+            <div class="frame" data-reveal="img" style="--d: 200ms">
+              <img
+                src="assets/photos/billiards-top.webp"
+                alt="A pool table seen from the balcony above, a fresh rack set on the red felt under the hanging lamps"
+                width="1200"
+                height="1804"
+                loading="lazy"
+              />
+            </div>
+            <figcaption class="caption">Fig. 03 — Under the lamps</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- ================= 02 AFTER THE BREAK ================= -->
+      <section class="section night" aria-labelledby="night-title">
+        <div class="wrap grid">
+          <p class="label section__label" data-reveal><span>02</span> After the break</p>
+          <h2 class="display night__title" id="night-title" data-reveal="lines">
+            <span class="line"><span>Pints, pads</span></span>
+            <span class="line line--indent-1"><span>&amp; the match.</span></span>
+          </h2>
+        </div>
+
+        <figure class="night__media">
+          <div class="frame frame--bleed" data-reveal="img">
+            <img
+              src="assets/photos/IMG_0809.webp"
+              alt="Inside Billy's: a red pool table under the lamps, bar stools along the wall and a match on the TV"
+              width="2624"
+              height="1804"
+              loading="lazy"
+              data-parallax="-0.08"
+            />
+          </div>
+        </figure>
+
+        <ol class="wrap rows">
+          <li class="row" id="bar" data-reveal>
+            <span class="row__num label">02.1</span>
+            <h3 class="row__title">At the bar</h3>
+            <p class="row__text">
+              Bitter IPAs, golden lagers and dark stouts on offer, plus all your
+              usual drinks. Hungry mid-game? Toasties and pizza to keep you
+              going.
+            </p>
+          </li>
+          <li class="row" id="games" data-reveal>
+            <span class="row__num label">02.2</span>
+            <h3 class="row__title">Game on</h3>
+            <p class="row__text">
+              Two PlayStation 5s, loaded with FIFA, Tekken and plenty more. No
+              booking, just grab a controller when one’s free. There’s also a
+              dartboard and a classic pinball machine for between rounds.
+            </p>
+          </li>
+          <li class="row" data-reveal>
+            <span class="row__num label">02.3</span>
+            <h3 class="row__title">Live on the screen</h3>
+            <p class="row__text">
+              Super League and Champions League on every match day, with the
+              sound up for the big games. For basketball fans, EuroLeague and
+              the Greek league. Also live tennis and fight nights.
+            </p>
+          </li>
+        </ol>
+
+        <!-- Decorative ticker; the same information is in the text above. -->
+        <div class="marquee" aria-hidden="true">
+          <div class="marquee__track">
+            <span>Super League</span><i></i><span>Champions League</span><i></i><span>EuroLeague</span><i></i><span>Greek Basket League</span><i></i><span>Tennis</span><i></i><span>Fight nights</span><i></i>
+            <span>Super League</span><i></i><span>Champions League</span><i></i><span>EuroLeague</span><i></i><span>Greek Basket League</span><i></i><span>Tennis</span><i></i><span>Fight nights</span><i></i>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= 03 EST. 1987 ================= -->
+      <section class="section about" id="about" aria-labelledby="about-title">
+        <div class="wrap grid">
+          <p class="label section__label" data-reveal><span>03</span> Since the beginning</p>
+        </div>
+
+        <div class="about__stage">
+          <h2 class="about__year" id="about-title" aria-label="Established 1987">
+            <span class="about__est" aria-hidden="true" data-reveal>Est.</span>
+            <span class="about__num" aria-hidden="true" data-parallax="0.12">1987</span>
+          </h2>
+
+          <div class="wrap grid about__photos">
+            <figure class="about__photo about__photo--main">
+              <div class="frame" data-reveal="img">
+                <img
+                  src="assets/photos/billiards_1987_4.webp"
+                  alt="Billy's in 1987: players with cues around the tables while a crowd watches from the room and the balcony"
+                  width="1132"
+                  height="688"
+                  loading="lazy"
+                />
+              </div>
+              <figcaption class="caption">Billy’s, 1987</figcaption>
+            </figure>
+
+            <figure class="about__photo about__photo--side">
+              <div class="frame" data-reveal="img" style="--d: 150ms">
+                <img
+                  src="assets/photos/billiards_1987.webp"
+                  alt="Billy's in the late eighties: regulars on white bar stools along the counter"
+                  width="597"
+                  height="1161"
+                  loading="lazy"
+                />
+              </div>
+              <figcaption class="caption">At the counter</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <div class="wrap grid about__copy">
+          <p class="lead about__text" data-reveal>
+            Billy opened the doors in 1987. The town walked in and never really
+            left. Today the new generation runs the bar, and the nights that
+            came before are still on the wall.
+          </p>
+
+          <figure class="about__photo about__photo--then">
+            <div class="frame" data-reveal="img" style="--d: 100ms">
+              <img
+                src="assets/photos/billiards_1987_3.webp"
+                alt="Billy's in 1987: a player in a leather jacket leans in for a shot as the room looks on"
+                width="1132"
+                height="693"
+                loading="lazy"
+              />
+            </div>
+            <figcaption class="caption">Leather jackets, same tables</figcaption>
+          </figure>
+        </div>
+      </section>
+    </main>
+
+    <!-- ================= 04 FIND US ================= -->
+    <footer class="footer" id="find-us" aria-labelledby="find-title">
+      <div class="wrap grid footer__grid">
+        <figure class="footer__photo">
+          <div class="frame" data-reveal="img">
+            <img
+              src="assets/photos/location-img.webp"
+              alt="Billy's at night from the street: the red-lit balcony above the entrance and the neon Billy's sign"
+              width="1152"
+              height="2048"
+              loading="lazy"
+            />
+          </div>
+          <figcaption class="caption">Look for the red balcony.</figcaption>
+        </figure>
+
+        <div class="footer__info">
+          <p class="label section__label" data-reveal><span>04</span> Find us</p>
+          <h2 class="display footer__title" id="find-title" data-reveal="lines">
+            <span class="line"><span>Open every</span></span>
+            <span class="line"><span>night.</span></span>
+          </h2>
+
+          <p class="hours" data-reveal style="--d: 150ms">
+            <time datetime="18:00">18:00</time><span class="hours__dash" aria-label="until"></span><time datetime="01:00">01:00</time>
+          </p>
+          <p class="lead" data-reveal style="--d: 220ms">Walk in, grab a cue, order a round.</p>
+
+          <address class="address" data-reveal style="--d: 280ms">
+            <span class="label">Location</span>
+            Konstantinou Sfakianaki 20,<br />Agios Nikolaos 72100.<br />
+            In the centre of town.
+          </address>
+
+          <div class="btn-row" data-reveal style="--d: 340ms">
+            <a class="btn btn--primary" href="https://maps.app.goo.gl/sBeQEkfYLbhqPP6d8" data-magnetic>
+              <span>Get directions</span><span class="btn__arrow" aria-hidden="true">↗</span>
+            </a>
+            <a class="btn" href="tel:+306970240215" data-magnetic><span>Call the bar</span></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="wrap footer__bottom">
+        <p>© 2026 Billy’s Public House · Est. 1987</p>
+        <a href="#top" class="logo" aria-label="Billy's, back to top">Billy's</a>
+        <p>Made by Digiko</p>
+      </div>
+    </footer>
+  </body>
+</html>
